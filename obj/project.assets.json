@@ -5074,11 +5074,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\robosoft corporation\\Desktop\\event\\EventEase\\EventEase.csproj",
+      "projectUniqueName": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj",
       "projectName": "EventEase",
-      "projectPath": "C:\\Users\\robosoft corporation\\Desktop\\event\\EventEase\\EventEase.csproj",
+      "projectPath": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj",
       "packagesPath": "C:\\Users\\robosoft corporation\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\robosoft corporation\\Desktop\\event\\EventEase\\obj\\",
+      "outputPath": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\robosoft corporation\\AppData\\Roaming\\NuGet\\NuGet.Config"
