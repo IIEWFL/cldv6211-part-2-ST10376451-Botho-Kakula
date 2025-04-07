@@ -1,0 +1,52 @@
+@model IEnumerable<Venue>
+
+@{
+    ViewData["Title"] = "Venues";
+}
+
+<h1>Venues</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VenueName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VenueName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" alt="Venue Image" style="max-width: 100px; max-height: 100px;" />
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VenueId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VenueId">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
