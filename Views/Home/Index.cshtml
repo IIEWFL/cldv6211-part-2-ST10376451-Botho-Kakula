@@ -2,25 +2,21 @@
     ViewData["Title"] = "EventEase - Home";
 }
 
-<div class="container py-5">
-    
+<div class="container mt-5">
     <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold text-primary">Welcome to EventEase</h1>
-        <p class="lead text-muted">Your complete event management solution</p>
+        <h1 class="display-4">Welcome to EventEase</h1>
+        <p class="lead">Your complete event management solution</p>
     </div>
 
-    
-    <div class="row g-4">
-        
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-
-                <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
-
+    <div class="row">
+        <!-- Venues Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                 <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
                 <div class="card-body">
                     <h5 class="card-title">Venues Management</h5>
-                    <p class="card-text text-muted">Manage all venue information including locations, capacities, and images.</p>
-                    <div class="d-grid gap-2 mt-3">
+                    <p class="card-text">Manage all venue information including locations, capacities, and images.</p>
+                    <div class="d-grid gap-2">
                         <a asp-controller="Venues" asp-action="Index" class="btn btn-primary">View Venues</a>
                         <a asp-controller="Venues" asp-action="Create" class="btn btn-outline-primary">Add New Venue</a>
                     </div>
@@ -28,14 +24,14 @@
             </div>
         </div>
 
-       
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
+        <!-- Events Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                 <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
                 <div class="card-body">
                     <h5 class="card-title">Events Management</h5>
-                    <p class="card-text text-muted">Create and manage events, schedules, and organizer information.</p>
-                    <div class="d-grid gap-2 mt-3">
+                    <p class="card-text">Create and manage events, schedules, and organizer information.</p>
+                    <div class="d-grid gap-2">
                         <a asp-controller="Events" asp-action="Index" class="btn btn-primary">View Events</a>
                         <a asp-controller="Events" asp-action="Create" class="btn btn-outline-primary">Add New Event</a>
                     </div>
@@ -43,14 +39,14 @@
             </div>
         </div>
 
-        
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-               <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
+        <!-- Bookings Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                 <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" class="card-img-top" alt="Venues">
                 <div class="card-body">
                     <h5 class="card-title">Bookings Management</h5>
-                    <p class="card-text text-muted">Handle all event bookings and customer reservations.</p>
-                    <div class="d-grid gap-2 mt-3">
+                    <p class="card-text">Handle all event bookings and customer reservations.</p>
+                    <div class="d-grid gap-2">
                         <a asp-controller="Bookings" asp-action="Index" class="btn btn-primary">View Bookings</a>
                         <a asp-controller="Bookings" asp-action="Create" class="btn btn-outline-primary">Create Booking</a>
                     </div>
@@ -59,31 +55,29 @@
         </div>
     </div>
 
-    
-    <div class="row mt-5 g-4">
+    <!-- Quick Stats Section -->
+    <div class="row mt-4">
         <div class="col-md-4">
-            <div class="card text-white bg-info h-100 shadow-sm text-center border-0">
-                <div class="card-body">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body text-center">
                     <h5 class="card-title">Total Venues</h5>
-                    <p class="display-6 fw-semibold">@ViewBag.VenueCount</p>
+                    <p class="card-text display-6">@ViewBag.VenueCount</p>
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
-            <div class="card text-white bg-success h-100 shadow-sm text-center border-0">
-                <div class="card-body">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body text-center">
                     <h5 class="card-title">Upcoming Events</h5>
-                    <p class="display-6 fw-semibold">@ViewBag.EventCount</p>
+                    <p class="card-text display-6">@ViewBag.EventCount</p>
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
-            <div class="card text-dark bg-warning h-100 shadow-sm text-center border-0">
-                <div class="card-body">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body text-center">
                     <h5 class="card-title">Recent Bookings</h5>
-                    <p class="display-6 fw-semibold">@ViewBag.BookingCount</p>
+                    <p class="card-text display-6">@ViewBag.BookingCount</p>
                 </div>
             </div>
         </div>

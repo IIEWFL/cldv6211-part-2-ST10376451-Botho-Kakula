@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EventEase.bundle.scp.css",
-      "PackagePath": "staticwebassets\\EventEase.bundle.scp.css"
+      "PackagePath": "staticwebassets\\EventEase.20nyt4zrgv.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EventEase.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EventEase.Microsoft.AspNetCore.StaticWebAssets.props",
