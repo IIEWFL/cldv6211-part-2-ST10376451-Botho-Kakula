@@ -197,3 +197,4 @@ C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\obj\Debug\net8.0
 C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\obj\Debug\net8.0\EventEase.pdb
 C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\obj\Debug\net8.0\EventEase.genruntimeconfig.cache
 C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\obj\Debug\net8.0\ref\EventEase.dll
+C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

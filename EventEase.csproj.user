@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <PublishUrlHistory />
     <InstallUrlHistory />
     <SupportUrlHistory />
@@ -10,5 +11,6 @@
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
     <ActiveDebugProfile>https</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\robosoft corporation\Desktop\St10376451_CLDV6211_Part1\Properties\PublishProfiles\ST10376451 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
