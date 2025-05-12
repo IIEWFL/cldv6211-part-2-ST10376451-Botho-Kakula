@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj": {}
+    "C:\\Users\\robosoft corporation\\Desktop\\PROJECTS\\EventEase\\EventEase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj": {
+    "C:\\Users\\robosoft corporation\\Desktop\\PROJECTS\\EventEase\\EventEase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj",
+        "projectUniqueName": "C:\\Users\\robosoft corporation\\Desktop\\PROJECTS\\EventEase\\EventEase.csproj",
         "projectName": "EventEase",
-        "projectPath": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\EventEase.csproj",
+        "projectPath": "C:\\Users\\robosoft corporation\\Desktop\\PROJECTS\\EventEase\\EventEase.csproj",
         "packagesPath": "C:\\Users\\robosoft corporation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robosoft corporation\\Desktop\\St10376451_CLDV6211_Part1\\obj\\",
+        "outputPath": "C:\\Users\\robosoft corporation\\Desktop\\PROJECTS\\EventEase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,27 +52,27 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

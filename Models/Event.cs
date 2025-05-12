@@ -1,17 +1,28 @@
-public class Event
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using EventEase.Models; 
+
+namespace EventEase.Models
 {
-    public int EventId { get; set; }   
-    public required string EventName { get; set; }
-    public required string Description { get; set; }
-    public required string Venue { get; set; } 
-    public DateTime Date { get; set; } 
+    public class Event
+    {
+        public int EventId { get; set; }
 
-    // Relationship with EventOrganizer (if exists)
-    public int EventOrganizerId { get; set; }
-    public required EventOrganizer EventOrganizer { get; set; } // Navigation property to the EventOrganizer
+        [Required]
+        public string EventName { get; set; }
 
-    // Possible relationship to bookings (one-to-many relationship)
-    public ICollection<Booking> Bookings { get; set; }
+        [Required]
+        public DateTime EventDate { get; set; }
 
-    // You can also include other properties as per your project requirements
+        public string Description { get; set; }
+
+        public int VenueId { get; set; }
+        public Venue Venue { get; set; }
+
+        public int EventOrganizerId { get; set; }
+        public EventOrganizer EventOrganizer { get; set; }
+
+        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+    }
 }

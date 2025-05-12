@@ -1,58 +1,31 @@
-@model IEnumerable<Event>
+@model IEnumerable<EventEase.Models.Event>
 
-@{
-    ViewData["Title"] = "Events";
-}
-
-<h1>Events</h1>
-
+<h2>Events List</h2>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Event</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EventName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Venue)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventOrganizer)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.EventName)</th>
+            <th>@Html.DisplayNameFor(model => model.EventDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Venue.VenueName)</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var eventItem in Model)
+    {
         <tr>
+            <td>@eventItem.EventName</td>
+            <td>@eventItem.EventDate.ToShortDateString()</td>
+            <td>@eventItem.Venue.VenueName</td>
             <td>
-                @Html.DisplayFor(modelItem => item.EventName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Venue)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventOrganizer.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.EventId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.EventId">Details</a>
+                <a href="@Url.Action("Details", new { id = eventItem.EventId })" class="btn btn-info">Details</a>
+                <a href="@Url.Action("Edit", new { id = eventItem.EventId })" class="btn btn-warning">Edit</a>
+                <a href="@Url.Action("Delete", new { id = eventItem.EventId })" class="btn btn-danger">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>

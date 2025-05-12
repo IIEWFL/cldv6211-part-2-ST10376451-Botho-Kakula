@@ -7,9 +7,9 @@ namespace EventEase.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly AppDbContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public HomeController(AppDbContext context)
+    public HomeController(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -17,7 +17,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.VenueCount = _context.Venues.Count();
-        ViewBag.EventCount = _context.Events.Count(e => e.Date >= DateTime.Today);
+        ViewBag.EventCount = _context.Events.Count(e => e.EventDate >= DateTime.Today);
         ViewBag.BookingCount = _context.Bookings.Count(b => b.BookingDate >= DateTime.Today.AddDays(-7));
         
         return View();

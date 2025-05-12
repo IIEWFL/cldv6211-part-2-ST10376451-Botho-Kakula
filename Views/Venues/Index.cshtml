@@ -1,4 +1,5 @@
-@model IEnumerable<Venue>
+@model IEnumerable<EventEase.Models.Venue>
+@using EventEase.Models
 
 @{
     ViewData["Title"] = "Venues";
@@ -6,47 +7,40 @@
 
 <h1>Venues</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<!-- Create New Venue Button -->
+<a asp-action="Create" class="btn btn-primary mb-3">Create New Venue</a>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.VenueName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Location)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Capacity)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th></th>
+            <th>Venue Name</th>
+            <th>Location</th>
+            <th>Capacity</th>
+            <th>Image</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.VenueName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Capacity)
-            </td>
-            <td>
-                <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/63f68257d8dd8e6c0968db11_63654f5b476c431e8cb27486_Venue%2520tech.jpeg" alt="Venue Image" style="max-width: 100px; max-height: 100px;" />
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.VenueId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.VenueId">Details</a>
-            </td>
-        </tr>
-}
+        @foreach (var venue in Model)
+        {
+            <tr>
+                <td>@venue.VenueName</td>
+                <td>@venue.Location</td>
+                <td>@venue.Capacity</td>
+                <td><img src="@venue.ImageUrl" alt="Venue Image" style="width: 100px; height: auto;" /></td>
+                <td>
+                    <!-- View Details Button -->
+                    <a asp-action="Details" asp-route-id="@venue.VenueId" class="btn btn-info">Details</a>
+
+                    <!-- Edit Button -->
+                    <a asp-action="Edit" asp-route-id="@venue.VenueId" class="btn btn-warning">Edit</a>
+
+                    <!-- Delete Button -->
+                    <form asp-action="Delete" asp-route-id="@venue.VenueId" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this venue?')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
