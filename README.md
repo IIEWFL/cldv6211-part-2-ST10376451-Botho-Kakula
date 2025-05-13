@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎉 EventEase
 
 EventEase is a modern ASP.NET Core MVC web application for managing and booking events with ease.
@@ -21,3 +22,6 @@ EventEase is a modern ASP.NET Core MVC web application for managing and booking 
 
 
 
+=======
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/gp-zUuae)
+>>>>>>> 67f7ebc1c6c343322b50ae4e88dbe3bda4043761
